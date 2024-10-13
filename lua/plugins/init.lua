@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -14,23 +14,33 @@ return {
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-        "html", "css", "go", "gomod", "gitignore", "terraform", "tsx", "typescript","javascript" 
-  		},
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "go",
+        "gomod",
+        "gitignore",
+        "terraform",
+        "tsx",
+        "typescript",
+        "javascript",
+      },
+    },
   },
-{
-  "github/copilot.vim",
-  lazy = false,
-  config = function()
-    vim.g.copilot_no_tab_map = true;
-    vim.g.copilot_assume_mapped = true;
-    vim.g.copilot_tab_fallback = "";
-  end
-},
+  {
+    "github/copilot.vim",
+    lazy = false,
+    config = function()
+      vim.g.copilot_no_tab_map = true
+      vim.g.copilot_assume_mapped = true
+      vim.g.copilot_tab_fallback = ""
+    end,
+  },
   {
     "nvim-tree/nvim-tree.lua",
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
@@ -41,16 +51,16 @@ return {
     end,
   },
   {
-   "tris203/precognition.nvim",
-   event = "VeryLazy",
-   opts = require "configs.precognition"
+    "tris203/precognition.nvim",
+    event = "VeryLazy",
+    opts = require "configs.precognition",
   },
   {
     "mfussenegger/nvim-lint",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
       require "configs.lint"
-    end
+    end,
   },
   {
     "rshkarin/mason-nvim-lint",
@@ -58,7 +68,7 @@ return {
     dependencies = { "nvim-lint" },
   },
   {
-   'fatih/vim-go',
+    "fatih/vim-go",
     lazy = false,
   },
 }

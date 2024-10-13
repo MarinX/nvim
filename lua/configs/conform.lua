@@ -2,12 +2,12 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
     go = { "goimports", "gofumpt" },
-    terraform = {"terraform_fmt"},
+    terraform = { "terraform_fmt" },
     css = { "prettier" },
     html = { "prettier" },
-    javascript = {"prettier"},
-    typescript = {"prettier"},
-    typescriptreact = {"prettier"},
+    javascript = { "prettier" },
+    typescript = { "prettier" },
+    typescriptreact = { "prettier" },
   },
 
   default_format_opts = {
@@ -22,7 +22,6 @@ local options = {
   format_after_save = {
     lsp_format = "fallback",
   },
-
 }
 
 return options

@@ -44,5 +44,3 @@ autocmd("VimEnter", {
 autocmd("VimLeavePre", {
   command = ":silent !kitty @ set-spacing padding=20 margin=10",
 })
-
-
