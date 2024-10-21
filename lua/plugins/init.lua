@@ -68,7 +68,26 @@ return {
     dependencies = { "nvim-lint" },
   },
   {
-    "fatih/vim-go",
-    lazy = false,
+    "mistricky/codesnap.nvim",
+    build = "make",
+    keys = {
+      { "<leader>cs", "<cmd>CodeSnapSave<cr>", mode = "x", desc = "Save selected code snapshot" },
+    },
+    opts = {
+      save_path = "~/Downloads",
+      has_line_number = true,
+      has_breadcrumbs = true,
+      watermark = "marin-basic.com",
+      bg_color = "#535c68",
+    },
+  },
+  {
+    "OXY2DEV/markview.nvim",
+    lazy = false, -- Recommended
+    -- ft = "markdown" -- If you decide to lazy-load anyway
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons",
+    },
   },
 }
