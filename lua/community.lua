@@ -23,4 +23,5 @@ return {
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.lsp.nvim-lint" },
   { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.completion.avante-nvim" },
 }

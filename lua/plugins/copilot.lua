@@ -5,7 +5,6 @@ return {
   event = "BufReadPost",
   opts = {
     suggestion = {
-      auto_trigger = true,
       keymap = {
         accept = false, -- handled by completion engine
       },
