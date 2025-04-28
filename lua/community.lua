@@ -24,4 +24,6 @@ return {
   { import = "astrocommunity.lsp.nvim-lint" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.completion.avante-nvim" },
+  { import = "astrocommunity.motion.harpoon" },
+  { import = "astrocommunity.motion.hop-nvim" },
 }
