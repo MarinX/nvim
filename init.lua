@@ -14,6 +14,6 @@ if not pcall(require, "lazy") then
   vim.fn.getchar()
   vim.cmd.quit()
 end
-
+vim.o.termguicolors = true
 require "lazy_setup"
 require "polish"
