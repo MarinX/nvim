@@ -30,6 +30,27 @@ return {
       },
     }
     if not opts.completion then opts.completion = {} end
-    opts.completion = { trigger = { prefetch_on_insert = false } }
+    opts.completion = {
+      documentation = {
+        auto_show = true,
+        auto_show_delay_ms = 500,
+      },
+      list = {
+        selection = {
+          preselect = false,
+          auto_insert = false,
+        },
+      },
+      trigger = { prefetch_on_insert = false },
+      menu = {
+        draw = {
+          treesitter = { "lsp" },
+          columns = {
+            { "label", "label_description", gap = 1 },
+            { "kind_icon", "kind" },
+          },
+        },
+      },
+    }
   end,
 }
