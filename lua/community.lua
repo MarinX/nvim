@@ -20,12 +20,11 @@ return {
   { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.media.codesnap-nvim" },
-  { import = "astrocommunity.media.vim-wakatime" },
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.lsp.nvim-lint" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.completion.minuet-ai-nvim" },
-  { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.hop-nvim" },
+  { import = "astrocommunity.git.diffview-nvim" },
 }
