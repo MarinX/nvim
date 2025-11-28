@@ -17,8 +17,8 @@ return {
         api_key = "TERM",
         name = "Ollama",
         end_point = "http://localhost:11434/v1/completions",
-        --model = "qwen2.5-coder:latest",
-        model = "qwen2.5-coder:14b",
+        model = "qwen2.5-coder:latest",
+        --model = "qwen2.5-coder:14b",
         optional = {
           max_tokens = 256,
           stop = { "\n\n" },

@@ -15,7 +15,8 @@ return {
     if not opts.sources then opts.sources = {} end
     opts.sources = {
       -- Enable minuet for autocomplete
-      default = { "lsp", "path", "buffer", "snippets", "minuet" },
+      -- default = { "lsp", "path", "buffer", "snippets", "minuet" },
+      default = { "lsp", "minuet" },
       -- For manual completion only, remove 'minuet' from default
       providers = {
         minuet = {
