@@ -19,7 +19,6 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
-  { import = "astrocommunity.media.codesnap-nvim" },
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.lsp.nvim-lint" },
@@ -27,4 +26,7 @@ return {
   { import = "astrocommunity.completion.minuet-ai-nvim" },
   { import = "astrocommunity.motion.hop-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.file-explorer.yazi-nvim" },
+  { import = "astrocommunity.utility.nvzone-menu" },
+  { import = "astrocommunity.ai.opencode-nvim" },
 }
